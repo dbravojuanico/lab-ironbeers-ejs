@@ -1,0 +1,18 @@
+<img src=<%- randomBeerApi[0].image_url %> alt="">
+<div>
+    <h1><%- randomBeerApi[0].name  %></h1>
+    <p><%- randomBeerApi[0].tagline  %></p>
+    <p><%- randomBeerApi[0].description  %></p>
+</div>  
+<div> 
+    <h2>Food Pairing:</h2>
+    <ul>
+        <% randomBeerApi[0].food_pairing.forEach(element => { %>
+                <li><%- element  %></li>
+            <% }) %>
+    </ul>
+    <h2>Brewers Tips:</h2>
+    <p><%- randomBeerApi[0].brewers_tips %></p>
+</div>
+
+

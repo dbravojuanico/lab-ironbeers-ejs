@@ -1,6 +1,11 @@
 <h1>beers</h1>
-<ul>
+<div>
     <% beersFromApi.forEach(element => { %>
-     <li><%- element  %></li>
+    <ul>
+        <li><%- element.name  %></li>
+        <li><img src=<%- element.image_url %> alt=""></li>
+        <li><%- element.description  %></li>
+        <li><%- element.tagline  %></li>
+    </ul>
     <% }) %>
-</ul>
+</div>

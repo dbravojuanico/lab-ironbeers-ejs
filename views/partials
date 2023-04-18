@@ -1,0 +1,7 @@
+
+<img src=<%- randomBeerApi[0].image_url %> alt="">
+<div>
+    <h1><%- randomBeerApi[0].name  %></h1>
+    <p><%- randomBeerApi[0].tagline  %></p>
+    <p><%- randomBeerApi[0].description  %></p>
+</div>  
